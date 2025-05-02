@@ -1,0 +1,29 @@
+.heroPage {
+    background-color: #0D1117;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.name {
+    color: white;
+    font-family: "Cascadia Code", sans-serif;
+    font-size: 60px;
+}
+
+.about {
+    color: white;
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.but {
+    background-color: #00F5D4;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+}

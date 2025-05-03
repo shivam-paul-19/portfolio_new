@@ -3,20 +3,21 @@
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    flex-direction: column;
 }
 
 .name {
     color: white;
     font-family: "Cascadia Code", sans-serif;
-    font-size: 60px;
+    font-weight: 400;
+    font-size: 70px;
 }
 
 .about {
     color: white;
-    font-size: 25px;
+    font-size: 18px;
+    width: 100%;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -26,4 +27,26 @@
     height: 50px;
     font-size: 20px;
     border-radius: 10px;
+}
+
+.photo-area {
+    background-color: white;
+    width: 30%;
+    height: 60%;
+    border-radius: 20px;
+    z-index: 0;
+}
+
+.text-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.but-area {
+    display: flex;
+    justify-content: space-around;
+    /* background-color: yellow; */
+    width: 50%;
 }

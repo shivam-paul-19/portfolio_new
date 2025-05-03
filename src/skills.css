@@ -1,0 +1,79 @@
+.skillPage {
+    width: 100%;
+    height: 100vh;
+    background-color: #0D1117;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.circle {
+    height: 70%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outerCir {
+    width: 400px; 
+    height: 400px;
+    border: 3px solid #00F5D4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.innerCir {
+    width: 240px;
+    height: 240px;
+    border: 3px dashed #00F5D4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: -1;
+}
+
+.skill-heading {
+    color: white;
+    font-size: 35px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+}
+
+.skill-card {
+    height: 60%;
+    width: 30%;
+    background-color: black;
+    border-radius: 20px;
+    border: 2px solid #00F5D4;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    padding: 20px;
+}
+
+.list-item {
+    font-size: 28px;
+}
+
+.skill-tabs {
+    width: 20%;
+    height: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-tabs h1 {
+    font-size: 20px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+}
+

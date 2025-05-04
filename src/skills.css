@@ -47,7 +47,7 @@
 }
 
 .skill-card {
-    height: 60%;
+    height: 70%;
     width: 30%;
     background-color: black;
     border-radius: 20px;
@@ -68,6 +68,10 @@
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
+}
+
+.skill-tabs > h1:hover {
+    color: #00F5D4;
 }
 
 .skill-tabs h1 {

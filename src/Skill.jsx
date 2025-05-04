@@ -4,15 +4,22 @@ import { useState } from "react";
 import { TextAnimate } from "@/components/magicui/text-animate";
 
 function SkillSection() {
-  let [skillList, setSkillList] = useState([
-    "Python",
-    "Java",
-    "C++",
-    "C",
-    "JavaScript",
-    "TypeScript",
-    "PHP",
-  ]);
+  let skillSet = [
+    ["Python", "Java", "C", "C++", "JavaScript", "TypeScript", "PHP"],
+    ["HTML", "CSS", "Node JS", "Express JS", "React JS", "MySQL", "Mongo DB", "Flask", "Streamlit", "Git"],
+    ["Figma", "Adobe Illustrator", "MS Office"]
+  ]
+
+  let [skillList, setSkillList] = useState(skillSet[0]);
+
+  let [activeTab, setActiveTab] = useState([1,0,0]);
+
+  const skillChange = (tab) => {
+    let active = [0,0,0];
+    active[tab] = 1;
+    setSkillList(skillSet[tab]);
+    setActiveTab(active);
+  }
 
   return (
     <>
@@ -24,8 +31,8 @@ function SkillSection() {
                 src="https://cdn.simpleicons.org/javascript/javascript"
                 alt=""
               />
-              <img src="https://cdn.simpleicons.org/css3/css3" alt="" />
-              <img src="https://cdn.simpleicons.org/python/python" alt="" />
+              <img src="https://cdn.simpleicons.org/css3" alt="" />
+              <img src="https://cdn.simpleicons.org/python" alt="" />
             </OrbitingCircles>
             <div className="innerCir">
               <OrbitingCircles iconSize={50} duration={15} radius={200} reverse>
@@ -33,8 +40,9 @@ function SkillSection() {
                   src="https://cdn.simpleicons.org/nodedotjs/nodedotjs"
                   alt=""
                 />
-                <img src="https://cdn.simpleicons.org/html5/html5" alt="" />
-                <img src="https://cdn.simpleicons.org/react/react" alt="" />
+                <img src="https://cdn.simpleicons.org/html5" alt="" />
+                <img src="https://cdn.simpleicons.org/react" alt="" />
+                <img src="https://cdn.simpleicons.org/git" alt="" />
               </OrbitingCircles>
               <h1 className="skill-heading">Skills</h1>
             </div>
@@ -50,7 +58,7 @@ function SkillSection() {
                   animation="blurIn"
                   by="word"
                   className="list-item"
-                  delay={index * 0.25}
+                  delay={index * 0.2}
                 >
                   {el}
                 </TextAnimate>
@@ -59,10 +67,11 @@ function SkillSection() {
           </ul>
         </div>
 
+        {/* Skills tab */}
         <div className="skill-tabs">
-          <h1 style={{ fontWeight: 900 }}>Programming Language</h1>
-          <h1>Technologies/Frameworks</h1>
-          <h1>Softwares</h1>
+          <h1 style={{ fontWeight: (activeTab[0])? 900 : 200 }} onClick={() => skillChange(0)}>Programming Language</h1>
+          <h1 style={{ fontWeight: (activeTab[1])? 900 : 200 }} onClick={() => skillChange(1)}>Technologies/Frameworks</h1>
+          <h1 style={{ fontWeight: (activeTab[2])? 900 : 200 }} onClick={() => skillChange(2)}>Softwares</h1>
         </div>
       </div>
     </>

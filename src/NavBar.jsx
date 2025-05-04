@@ -2,7 +2,7 @@ import "./navBar.css"
 import { useState } from "react";
 
 function NavBar() {
-    const tabs = ["Home", "Skills", "Education", "Projects", "Certificates"];
+    const tabs = ["Home", "Skills", "Education", "Projects", "Certificates", "Contact"];
     const [activeTab, setActiveTab] = useState(0);
 
     return (

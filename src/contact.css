@@ -1,0 +1,42 @@
+.contact-area {
+    width: 100%;
+    height: 50vh;
+    background-color: #0D1117;
+}
+
+.icon {
+    color: white;
+    font-size: 40px;
+}
+
+.head {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    margin-left: 20px;
+}
+
+.contact-link {
+    border-radius: 20px;
+    border: 2px solid #00F5D4;
+    width: 100%;
+    padding: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.contact-link a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+}
+
+.contact-link a:hover {
+    cursor: none;
+}
+
+.contact-link:hover {
+    background-color: #00F5D4;
+    color: black;
+}

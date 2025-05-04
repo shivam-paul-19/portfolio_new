@@ -30,11 +30,17 @@
 }
 
 .photo-area {
-    background-color: white;
     width: 30%;
     height: 60%;
-    border-radius: 20px;
     z-index: 0;
+}
+
+.photo-area-inner {
+    width: 100%;
+    height: 100%;
+    background-image: url("assets/dp.jpg");
+    background-size: cover;
+    border-radius: 25px;
 }
 
 .text-area {
@@ -49,4 +55,8 @@
     justify-content: space-around;
     /* background-color: yellow; */
     width: 50%;
+}
+
+.but-area button:hover {
+    cursor: none;
 }

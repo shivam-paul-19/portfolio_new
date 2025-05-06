@@ -1,5 +1,6 @@
 import './App.css'
 import Contact from './contact';
+import Education from './education';
 import HeroSection from './HeroSection'
 import NavBar from './NavBar'
 import SkillSection from './Skill'
@@ -11,6 +12,7 @@ function App() {
       <NavBar />
       <HeroSection />
       <SkillSection />
+      <Education />
       <Contact />
       <Pointer className="fill-teal-500" />
     </>

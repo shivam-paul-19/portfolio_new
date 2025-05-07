@@ -8,10 +8,10 @@
 }
 
 .edu-box {
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    align-items: center;
 }
 
 .edu-image {

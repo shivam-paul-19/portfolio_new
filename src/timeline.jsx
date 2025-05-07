@@ -1,13 +1,14 @@
 function TimeLine() {
+  let edu_style = {fontSize: "20px", fontFamily: "Montserrat", fontWeight: "bold"}
     return (
         <>
-            <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+            <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
           <li>
-            <div class="timeline-middle">
+            <div className="timeline-middle">
               <svg
                 viewBox="0 0 20 20"
                 fill="#00F5D4"
-                class="h-5 w-5"
+                className="h-5 w-5"
               >
                 <path
                   fill-rule="evenodd"
@@ -16,23 +17,24 @@ function TimeLine() {
                 />
               </svg>
             </div>
-            <div class="timeline-start mb-10 md:text-end">
-              <time class="font-mono italic">2023-2026</time>
-              <div class="text-lg font-black">Vivenkananda Institute of Professional Studies <br /> (Affiliated to GGSIPU)</div>
+            <div className="timeline-start mb-10 md:text-end">
+              <time className="font-mono italic">2023-2026</time>
+              <div style={edu_style}>Vivenkananda Institute of Professional Studies <br /> (Affiliated to GGSIPU)</div>
               <ul>
-                <li>Grade: 9.1 CGPA</li>
+                <li>Bachelor of Computer Applications</li>
+                <li style={{fontStyle: "italic"}}>Grade: 9.1 CGPA</li>
               </ul>
             </div>
             <hr />
           </li>
           <li>
             <hr />
-            <div class="timeline-middle">
+            <div className="timeline-middle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="#00F5D4"
-                class="h-5 w-5"
+                className="h-5 w-5"
               >
                 <path
                   fill-rule="evenodd"
@@ -41,12 +43,12 @@ function TimeLine() {
                 />
               </svg>
             </div>
-            <div class="timeline-end mb-10">
-              <time class="font-mono italic">2010-2023</time>
-              <div class="text-lg font-black">Bal Bhavan Public Sn. Sec. School</div>
+            <div className="timeline-end mb-10">
+              <time className="font-mono italic">2010-2023</time>
+              <div style={edu_style}>Bal Bhavan Public Sn. Sec. School <br /> (Affiliated to CBSE)</div>
               <ul>
-                <li>Class 12th: 93%</li>
-                <li>Class 10th: 94%</li>
+                <li style={{fontStyle: "italic"}}>Class 12th: 93%</li>
+                <li style={{fontStyle: "italic"}}>Class 10th: 94%</li>
               </ul>
             </div>
           </li>

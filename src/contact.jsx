@@ -15,7 +15,6 @@ function Contact() {
   return (
     <>
       <div className="contact-area">
-        {/* <h1 className="head">Where can you contact me?</h1> */}
         <div className="head">
           <p>How can you reach me?</p>
           <FaSearch className="search-icon"/>

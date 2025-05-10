@@ -1,0 +1,23 @@
+.cert-area {
+    height: 100vh;
+    width: 100%;
+    background-color: #0D1117;
+    padding: 20px;
+}
+
+.cert-card {
+    background-color: black;
+    border: 1px solid #00F5D4;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+
+.cert-card-in {
+    display: flex;
+    align-items: center;
+    width: 90%;
+}

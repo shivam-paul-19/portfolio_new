@@ -9,6 +9,7 @@ function ProjectCard({ title, desc, github, link, image }) {
     maxWidth: 345,
     backgroundColor: "black",
     color: "white",
+    
   };
 
   let title_style = {
@@ -21,30 +22,48 @@ function ProjectCard({ title, desc, github, link, image }) {
     fontSize: "15px",
     fontFamily: "Montserrat",
   };
+
   return (
     <>
       <Card sx={card_style}>
         <CardMedia
-          sx={{ height: 140 }}
-          image="https://media.istockphoto.com/id/510322864/photo/red-sunset.jpg?s=612x612&w=0&k=20&c=XSMKCBQTgVfllBHRMcEVTypBsPJBxROb0fgcZxUuSjE="
+          sx={{ height: 140, border: ".5px solid white" }}
+          image={image}
         />
         <CardContent>
           <h1 style={title_style}>{title}</h1>
           <p style={para_style}>{desc}</p>
         </CardContent>
         <CardActions>
-          <a href="">
-            <Button size="small" variant="outlined" sx={{ color: "white" }}>
-              {github}
+          <a href={github} target="blank">
+            <Button
+              size="small"
+              variant="outlined"
+              sx={{
+                color: "white",
+                borderColor: "white",
+                "&:hover": {
+                  backgroundColor: "#333",
+                  cursor: "none",
+                },
+              }}
+            >
+              github Repository
             </Button>
           </a>
-          <a href="">
+          <a href={link} target="blank">
             <Button
               size="small"
               variant="contained"
-              sx={{ backgroundColor: "#00F5D4", color: "black" }}
+              sx={{
+                backgroundColor: "#00F5D4",
+                color: "black",
+                "&:hover": {
+                  cursor: "none",
+                },
+              }}
             >
-              {link}
+              Deployed link
             </Button>
           </a>
         </CardActions>

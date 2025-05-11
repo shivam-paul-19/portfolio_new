@@ -7,15 +7,15 @@ import gemchatCover from "./assets/gemchat-cover.png";
 import bookverseCover from "./assets/bookverse-cover.png";
 import codebuddyCover from "./assets/codebuddy-cover.png";
 import cricketCover from "./assets/cricket-cover.png";
+import { LineShadowText } from "@/components/magicui/line-shadow-text";
+
+import "./project.css";
 
 function Projects() {
   return (
     <>
-      <div className="projects-area" style={{
-        padding: "70px 0",
-        width: "100%",
-        backgroundColor: "#0D1117"
-      }}>
+      <div className="projects-area">
+        <LineShadowText shadowColor="white" className="project-head">Projects</LineShadowText><br />
         <Grid container spacing={2} className="contact-box">
           <Grid size={3}>
             <ProjectCard

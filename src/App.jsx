@@ -12,12 +12,12 @@ function App() {
   return (
     <>
       <NavBar />
-      <HeroSection />
-      <SkillSection />
-      <Projects />
-      <Education />
-      <Certificates />
-      <Contact />
+      <div id="home"><HeroSection /></div>
+      <div id="skills"><SkillSection /></div>
+      <div id="projects"><Projects /></div>
+      <div id="education"><Education /></div>
+      <div id="certificates"><Certificates /></div>
+      <div id="contact"><Contact /></div>
       <Pointer className="fill-teal-500" />
     </>
   )

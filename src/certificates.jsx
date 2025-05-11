@@ -1,11 +1,13 @@
 import "./cert.css";
 import CertCard from "./certCard";
 import { Grid } from "@mui/material";
+import { AuroraText } from "@/components/magicui/aurora-text";
 
 function Certificates() {
   return (
     <>
       <div className="cert-area">
+        <AuroraText className="cert-head" colors={["#00F5D4", "#f567ff", "#0070F3", "#000d9f"]}>Certificates</AuroraText><br />
         <Grid container spacing={2} className="contact-box">
           <Grid size={6}>
             <CertCard

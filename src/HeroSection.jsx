@@ -8,11 +8,15 @@ function HeroSection() {
   return (
     <>
       <div className="heroPage">
-      <NeonGradientCard className="photo-area" borderRadius={40} neonColors={{
-        firstColor: "#00F5D4",
-        secondColor: "#FF00AA"
-      }}>
-        <div className="photo-area-inner"></div>
+        <NeonGradientCard
+          className="photo-area"
+          borderRadius={40}
+          neonColors={{
+            firstColor: "#00F5D4",
+            secondColor: "#FF00AA",
+          }}
+        >
+          <div className="photo-area-inner"></div>
         </NeonGradientCard>
         <div className="text-area">
           <TypingAnimation className="name">
@@ -38,13 +42,21 @@ function HeroSection() {
             >
               <button className="but">My resume</button>
             </a>
-            <button className="but" style={{ backgroundColor: "white" }}>
+            <button
+              className="but"
+              style={{ backgroundColor: "white" }}
+              onClick={() => {
+                const contactSection = document.getElementById("contact");
+                if (contactSection) {
+                  contactSection.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+            >
               Contact
             </button>
           </div>
         </div>
       </div>
-      
     </>
   );
 }

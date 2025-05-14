@@ -13,7 +13,7 @@
     border: 1px solid #00F5D4;
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 500px;
     padding: 10px;
     border-radius: 20px;
     justify-content: space-between;
@@ -30,4 +30,15 @@
     font-weight: 900;
     font-size: 50px;
     font-style: italic;
+}
+
+@media (max-width: 550px) {
+    .cert-card-in {
+        flex-direction: column;
+        /* background-color: yellow; */
+    }
+
+    .cert-card {
+        width: 90vw;
+    }
 }

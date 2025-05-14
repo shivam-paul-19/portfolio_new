@@ -45,6 +45,8 @@
     height: 100%;
     background-image: url("assets/dp.jpg");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 25px;
 }
 
@@ -58,10 +60,93 @@
 .but-area {
     display: flex;
     justify-content: space-around;
-    /* background-color: yellow; */
-    width: 50%;
+    width: 60%;
 }
 
 .but-area button:hover {
     cursor: none;
+}
+
+@media (max-width: 1050px) {
+    .but-area {
+        width: 70%;
+    }
+}
+
+@media (max-width: 860px) {
+    .but-area {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        align-items: center;
+    }
+}
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .heroPage {
+    flex-direction: column;
+    padding: 40px 20px;
+    height: auto;
+  }
+
+  .text-area {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .name {
+    font-size: 50px;
+  }
+
+  .about {
+    font-size: 16px;
+    width: 90%;
+  }
+
+  .but-area {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 200px;
+  }
+
+  .photo-area {
+    width: 70%;
+    height: 300px;
+    margin-top: 30px;
+  }
+}
+
+/* Mobiles (480px and below) */
+@media (max-width: 480px) {
+  .name {
+    font-size: 40px;
+  }
+
+  .about {
+    font-size: 14px;
+    width: 95%;
+  }
+
+  .but-area {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .but {
+    width: 130px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  .photo-area {
+    width: 90%;
+    height: 250px;
+  }
 }

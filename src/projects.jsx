@@ -16,8 +16,8 @@ function Projects() {
     <>
       <div className="projects-area">
         <LineShadowText shadowColor="white" className="project-head">Projects</LineShadowText><br />
-        <Grid container spacing={2} className="contact-box">
-          <Grid size={3}>
+        <Grid container spacing={2} justifyContent="center">
+          <Grid item xs={12} sm={6} md={4} lg={3}>
             <ProjectCard
               title="Quizle"
               desc="Quizle is a fun web app to play quizzes on Science, Cricket, Bollywood, and Programming—random mode included for more challenges."
@@ -26,7 +26,7 @@ function Projects() {
               image={quizleCover}
             />
           </Grid>
-          <Grid size={3}>
+          <Grid item xs={12} sm={6} md={4} lg={3}>
             <ProjectCard
               title="Atmos"
               desc="Atmos is a weather app made in React framework showing real-time conditions and 5-day forecasts using the OpenWeather API."
@@ -35,7 +35,7 @@ function Projects() {
               image={atmosCover}
             />
           </Grid>
-          <Grid size={3}>
+          <Grid item xs={12} sm={6} md={4} lg={3}>
             <ProjectCard
               title="Gem Chat"
               desc="GemChat is a React-based AI chatbot that uses Google Gemini API to deliver smart, prompt responses which are given in real time."
@@ -44,7 +44,7 @@ function Projects() {
               image={gemchatCover}
             />
           </Grid>
-          <Grid size={3}>
+          <Grid item xs={12} sm={6} md={4} lg={3}>
             <ProjectCard
               title="DesX"
               desc="DesX is a MERN stack based canvas web app for creating, saving, and downloading creative illustrations using Fabric.js."
@@ -53,7 +53,7 @@ function Projects() {
               image={desxCover}
             />
           </Grid>
-          <Grid size={3}>
+          <Grid item xs={12} sm={6} md={4} lg={3}>
             <ProjectCard
               title="Cricket analyzer"
               desc="An interactive app made with Streamlit to analyze cricket players’ stats with graphs, format filters, and performance breakdowns."
@@ -62,7 +62,7 @@ function Projects() {
               image={cricketCover}
             />
           </Grid>
-          <Grid size={3}>
+          <Grid item xs={12} sm={6} md={4} lg={3}>
             <ProjectCard
               title="Code Buddy"
               desc="A smart AI tool that explains DSA questions, provides code, dry run, and complexity, or copy the solutioon in 1 click! — just from a question link."
@@ -71,7 +71,7 @@ function Projects() {
               image={codebuddyCover}
             />
           </Grid>
-          <Grid size={3}>
+          <Grid item xs={12} sm={6} md={4} lg={3}>
             <ProjectCard
               title="BookVerse"
               desc="BookVerse is an AI-powered book recommendation tool suggesting top-rated reads using user preferences and similarity-based filtering."

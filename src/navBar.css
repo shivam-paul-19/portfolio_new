@@ -24,3 +24,15 @@
     font-weight: 500;
     color: black;
 }
+
+@media (max-width: 1250px) {
+    .navOpts {
+        width: 90%;
+    }
+}
+
+@media (max-width: 700px) {
+    .nav {
+        display: none;
+    }
+}

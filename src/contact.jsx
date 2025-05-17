@@ -20,15 +20,15 @@ function Contact() {
           <FaSearch className="search-icon"/>
         </div>
         <br />
-        <Grid container spacing={1} className="contact-box">
-          <Grid size={3}>
+        <Grid container spacing={1} className="contact-box" justifyContent="center">
+          <Grid item sm={12} md={6} lg={3}>
             <div className="contact-link">
               <IoCall className="icon" />
               &nbsp; &nbsp; 
               <p>+91 9773903130</p>
             </div>
           </Grid>
-          <Grid size={3}>
+          <Grid item sm={12} md={6} lg={3}>
               <a href="">
             <div className="contact-link">
               <SiGmail className="icon" />
@@ -37,7 +37,7 @@ function Contact() {
             </div>
                 </a>
           </Grid>
-          <Grid size={3}>
+          <Grid item sm={12} md={6} lg={3}>
               <a href="https://www.linkedin.com/in/shivam-paul-545790281/" target="blank">
             <div className="contact-link">
               <SiLinkedin className="icon" />
@@ -46,7 +46,7 @@ function Contact() {
             </div>
                 </a>
           </Grid>
-          <Grid size={3}>
+          <Grid item sm={12} md={6} lg={3}>
               <a href="https://leetcode.com/u/shivampaul23/" target="blank">
             <div className="contact-link">
               <SiLeetcode className="icon" />
@@ -55,7 +55,7 @@ function Contact() {
             </div>
                 </a>
           </Grid>
-          <Grid size={3}>
+          <Grid item sm={12} md={6} lg={3}>
               <a href="https://github.com/shivam-paul-19" target="blank">
             <div className="contact-link">
               <SiGithub className="icon" />
@@ -64,7 +64,7 @@ function Contact() {
             </div>
                 </a>
           </Grid>
-          <Grid size={3}>
+          <Grid item sm={12} md={6} lg={3}>
               <a href="https://medium.com/@shivampaul2319" target="blank">
             <div className="contact-link">
               <SiMedium className="icon" />
@@ -73,7 +73,7 @@ function Contact() {
             </div>
                 </a>
           </Grid>
-          <Grid size={3}>
+          <Grid item sm={12} md={6} lg={3}>
               <a href="https://www.instagram.com/shivampaul_2319/" target="blank">
             <div className="contact-link">
               <SiInstagram className="icon" />

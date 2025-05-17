@@ -1,6 +1,6 @@
 .contact-area {
     width: 100%;
-    height: 40vh;
+    height: 60vh;
     background-color: #0D1117;
     display: flex;
     flex-direction: column;
@@ -39,12 +39,13 @@
 
 .contact-box {
     margin: 0 15px;
+    width: 100%;
 }
 
 .contact-link {
     border-radius: 20px;
     border: 2px solid #00F5D4;
-    width: 100%;
+    width: 400px;
     padding: 15px;
     color: white;
     display: flex;
@@ -69,4 +70,64 @@ a:hover {
     width: 100vw;
     height: 80px;
     background-image: linear-gradient(#0D1117, #00F5D4);
+}
+
+@media (max-width: 8251px) {
+    .head {
+        width: 80%;
+        padding: 0 15px;
+    }
+
+    .head p {
+        font-size: 18px;
+    }
+
+    .search-icon {
+        font-size: 20px;
+    }
+
+    .contact-link {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .contact-link a,
+    .contact-link p {
+        font-size: 16px;
+    }
+
+    .icon {
+        font-size: 30px;
+    }
+
+    .contact-area {
+        height: auto;
+        padding: 30px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .head {
+        width: 95%;
+        padding: 0 10px;
+    }
+
+    .head p {
+        font-size: 16px;
+    }
+
+    .contact-link {
+        font-size: 14px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .icon {
+        font-size: 24px;
+    }
+
+    .endingGrad {
+        height: 60px;
+    }
 }

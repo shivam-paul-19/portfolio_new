@@ -11,3 +11,9 @@
     font-family: "Montserrat", sans-serif;
     font-weight: 900;
 }
+
+@media (max-width: 1700px) {
+    .projects-area {
+        padding-bottom: 50px;
+    }
+}

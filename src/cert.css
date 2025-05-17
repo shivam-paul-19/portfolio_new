@@ -32,13 +32,23 @@
     font-style: italic;
 }
 
+@media (max-width: 1080px) {
+    .cert-area {
+        height: 120vh;
+
+    }
+}
+
 @media (max-width: 550px) {
     .cert-card-in {
         flex-direction: column;
-        /* background-color: yellow; */
     }
 
     .cert-card {
         width: 90vw;
+    }
+
+    .cert-area {
+        height: 200vh;
     }
 }

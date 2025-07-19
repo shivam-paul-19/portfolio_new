@@ -5,8 +5,8 @@ import { TextAnimate } from "@/components/magicui/text-animate";
 
 function SkillSection() {
   let skillSet = [
-    ["Python", "Java", "C", "C++", "JavaScript", "TypeScript", "PHP"],
-    ["HTML", "CSS", "Node JS", "Express JS", "React JS", "MySQL", "Mongo DB", "Flask", "Streamlit", "Git"],
+    ["HTML", "CSS", "Node JS", "Express JS", "React JS", "Next JS", "MySQL", "Mongo DB", "Flask", "Streamlit", "Git"],
+    ["Python", "Java", "C", "C++", "JavaScript"],
     ["Figma", "Adobe Illustrator", "MS Office"]
   ]
 
@@ -69,8 +69,8 @@ function SkillSection() {
 
         {/* Skills tab */}
         <div className="skill-tabs">
-          <h1 style={{ fontWeight: (activeTab[0])? 900 : 200 }} onClick={() => skillChange(0)}>Programming Language</h1>
-          <h1 style={{ fontWeight: (activeTab[1])? 900 : 200 }} onClick={() => skillChange(1)}>Technologies/Frameworks</h1>
+          <h1 style={{ fontWeight: (activeTab[0])? 900 : 200 }} onClick={() => skillChange(1)}>Technologies/Frameworks</h1>
+          <h1 style={{ fontWeight: (activeTab[1])? 900 : 200 }} onClick={() => skillChange(0)}>Programming Language</h1>
           <h1 style={{ fontWeight: (activeTab[2])? 900 : 200 }} onClick={() => skillChange(2)}>Softwares</h1>
         </div>
       </div>

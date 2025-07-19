@@ -22,7 +22,7 @@ function TimeLine() {
               <div style={edu_style}>Vivenkananda Institute of Professional Studies <br /> (Affiliated to GGSIPU)</div>
               <ul>
                 <li>Bachelor of Computer Applications</li>
-                <li style={{fontStyle: "italic"}}>Grade: 9.1 CGPA</li>
+                <li style={{fontStyle: "italic"}}>Grade: 9.4 CGPA</li>
               </ul>
             </div>
             <hr />

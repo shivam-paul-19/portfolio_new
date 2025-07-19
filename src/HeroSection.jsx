@@ -37,7 +37,7 @@ function HeroSection() {
           <br />
           <div className="but-area">
             <a
-              href="https://drive.google.com/file/d/1es7BI-nIy1YKwK3gnMFV9rMSJlsnT6aT/view?usp=sharing"
+              href="https://drive.google.com/file/d/1y2sPhUp-4NE4zgyHSvx70n8bgxvzO3Tz/view?usp=sharing"
               target="_blank"
             >
               <button className="but">My resume</button>

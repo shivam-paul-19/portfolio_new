@@ -7,6 +7,7 @@ import gemchatCover from "./assets/gemchat-cover.png";
 import bookverseCover from "./assets/bookverse-cover.png";
 import codebuddyCover from "./assets/codebuddy-cover.png";
 import cricketCover from "./assets/cricket-cover.png";
+import resumeCover from "./assets/resume-fit-cover.png";
 import { LineShadowText } from "@/components/magicui/line-shadow-text";
 
 import "./project.css";
@@ -78,6 +79,15 @@ function Projects() {
               github="https://github.com/shivam-paul-19/Book-Recommendation-System"
               link="https://bookverse-yqux.onrender.com/"
               image={bookverseCover}
+            />
+          </Grid>
+          <Grid item xs={12} sm={6} md={4} lg={3}>
+            <ProjectCard
+              title="Resume Fit-check"
+              desc="Resume Analyzer is a React-based tool that uses AI to scan resumes and generate detailed feedback with real-time suggestions for improvement."
+              github="https://github.com/shivam-paul-19/resume-analyzer"
+              link="https://resumefitcheck.vercel.app/"
+              image={resumeCover}
             />
           </Grid>
         </Grid>
